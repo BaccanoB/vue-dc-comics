@@ -39,7 +39,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    @import "../style/general";
+    @import "../style/variable";
 
     main {
         color: white;
@@ -58,7 +58,7 @@ export default {
         #blu_section {
             width: 100%;
             height: 120px;
-            background-color: #0282F9; 
+            background-color: $dc_color; 
 
             #blu_icon {
                 width: 75%;
@@ -81,9 +81,9 @@ export default {
                     }
 
                     h4 {
-                    text-transform: uppercase;
+                    text-transform: $text_style;
                     font-weight: 500;
-                    font-size: 12px;
+                    font-size: $text_size;
                     padding-left: 5px;
                     }
                 }

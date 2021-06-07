@@ -66,7 +66,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    @import "../style/general";
+    @import "../style/variable";
     
     header {
         display: flex;
@@ -100,14 +100,14 @@ export default {
                     a{
                         padding: 10px 10px 27px 10px;
                         text-decoration: none;
-                        text-transform: uppercase;
-                        font-size: 11px;
+                        text-transform: $text_style;
+                        font-size: $text_size;
                         font-weight: bold;
                         color: black;
                         &.active,
                         &:hover {
-                            color: #0282F9;
-                            border-bottom: 4px solid#0282F9;
+                            color: $dc_color;
+                            border-bottom: 4px solid $dc_color;
                         }
                     }
                 }

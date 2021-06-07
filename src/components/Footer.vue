@@ -87,7 +87,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    @import "../style/general";
+    @import "../style/variable";
 
     footer{
         width: 100vw;
@@ -127,7 +127,7 @@ export default {
 
             h3 {
                 font-size: 14px;
-                text-transform: uppercase;
+                text-transform: $text_style;
             }
 
             ul {
@@ -157,11 +157,11 @@ export default {
 
                 button {
                 padding: 10px;
-                text-transform: uppercase;
-                font-size: 12px;
+                text-transform: $text_style;
+                font-size: $text_size;
                 background-color: #303030;
                 color: white;
-                border: 2px solid #0282F9;
+                border: 2px solid $dc_color;
                 }
             }
 
@@ -176,8 +176,8 @@ export default {
                     text-decoration: none;
                     font-size: 16px;
                     font-weight: bold;
-                    text-transform: uppercase;
-                    color:  #0282F9;
+                    text-transform: $text_style;
+                    color:  $dc_color;
                 }
 
                 ul {
