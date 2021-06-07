@@ -79,7 +79,7 @@ export default {
         width: 80%;
         margin: 0 auto;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
     }
 
@@ -89,6 +89,7 @@ export default {
 
     nav {
         width: 600px;
+        text-align: right;
     }
 
     ul {

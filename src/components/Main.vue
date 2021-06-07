@@ -19,7 +19,7 @@ export default {
         display: flex;
         align-items: center;
         width: 100%;
-        height: 120px;
+        height: 80px;
         background-color: #1C1C1C;
         color: white;
     }
@@ -27,11 +27,5 @@ export default {
     div {
         width: 80%;
         margin: 0 auto;
-
-        h2 {
-            margin-left: 145px;
-        }
-    }
-
-    
+    }    
 </style>
