@@ -69,6 +69,8 @@ export default {
     @import "../style/general";
     
     header {
+        display: flex;
+        align-items: center;
         width: 100vw;
         height: 80px;
     }
@@ -82,11 +84,11 @@ export default {
     }
 
     img {
-        width: 60px;
+        width: 65px;
     }
 
     nav {
-        width: 60%;
+        width: 600px;
     }
 
     ul {
@@ -95,21 +97,18 @@ export default {
         li {
             display: inline-block;
             padding: 3px;
-
-            &:hover {
-                border-bottom: 2px solid#0282F9;
-            }
             
             a{
-                padding: 10px;
+                padding: 10px 10px 27px 10px;
                 text-decoration: none;
                 text-transform: uppercase;
-                font-size: 10px;
+                font-size: 11px;
                 font-weight: bold;
                 color: black;
                 &.active,
                 &:hover {
-                     color: #0282F9;
+                    color: #0282F9;
+                    border-bottom: 4px solid#0282F9;
                 }
             }
         }
