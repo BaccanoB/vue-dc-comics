@@ -91,18 +91,17 @@ export default {
 
     footer{
         width: 100vw;
-        height: calc(100vh - 200px);
-    }
+        height: calc(100vh - 280px);
 
-    #dc_logo_section {
+        #dc_logo_section {
         display: flex;
         width: 100%;
-        height: calc(100% - 150px);
+        height: calc(100% - 80px);
         background: url(../assets/img/footer-bg.jpg);
         background-size: cover;
         background-position: top;
 
-        #dc_logo {
+            #dc_logo {
             position: relative;
             width: 50%;
             height: 100%;
@@ -113,8 +112,8 @@ export default {
                 top: -60px;
                 height: 450px;
             }
-        }
-        #footer_list {
+            }
+            #footer_list {
             display: flex;
             width: 50%;
             height: 100%;
@@ -138,10 +137,10 @@ export default {
                 font-weight: bold;
                 color: #777777;
             }
+            }
         }
-    }
 
-    #footer_social_icons {
+        #footer_social_icons {
         display: flex;
         align-items: center;
         width: 100%;
@@ -204,5 +203,7 @@ export default {
                 }
             }  
         }
+        }
     }
+
 </style>

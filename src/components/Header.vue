@@ -81,35 +81,35 @@ export default {
         display: flex;
         justify-content: space-between;
         align-items: center;
-    }
 
-    img {
+          img {
         width: 65px;
-    }
+        }
 
-    nav {
+        nav {
         width: 600px;
         text-align: right;
-    }
 
-    ul {
-        list-style: none;
+            ul {
+                list-style: none;
 
-        li {
-            display: inline-block;
-            padding: 3px;
-            
-            a{
-                padding: 10px 10px 27px 10px;
-                text-decoration: none;
-                text-transform: uppercase;
-                font-size: 11px;
-                font-weight: bold;
-                color: black;
-                &.active,
-                &:hover {
-                    color: #0282F9;
-                    border-bottom: 4px solid#0282F9;
+                li {
+                    display: inline-block;
+                    padding: 3px;
+                    
+                    a{
+                        padding: 10px 10px 27px 10px;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        font-size: 11px;
+                        font-weight: bold;
+                        color: black;
+                        &.active,
+                        &:hover {
+                            color: #0282F9;
+                            border-bottom: 4px solid#0282F9;
+                        }
+                    }
                 }
             }
         }
