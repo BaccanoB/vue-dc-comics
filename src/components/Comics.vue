@@ -18,18 +18,25 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+ @import "../style/variable";
     .comics {
         width: calc(100% / 6);
-        height: 200px;
-        padding: 20px;
+        height: 300px;
+        padding: 10px;
 
         #img_container{
             height: 80%;
 
             img {
             width: 90%;
-            
-        }
+            }
+
+            figcaption {
+                text-transform: $text_style;
+                font-size: $text_size;
+                font-weight: bold;
+            }
         }
 
     }

@@ -1,6 +1,8 @@
 <template>
     <main>
         <div id="container">
+            <div id="jumbotron">
+            </div>
             <section>
                 <Comics
                     v-for="(comic,index) in comics"
@@ -133,6 +135,12 @@
         color: white;
         #container{
             background-color: #1C1C1C;
+
+            #jumbotron {
+                height: 300px;
+                background-image: url(../assets/img/jumbotron.jpg);
+                background-size: cover;
+            }
 
             & > section {
                 display: flex;
