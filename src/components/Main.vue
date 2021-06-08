@@ -2,6 +2,7 @@
     <main>
         <div id="container">
             <div id="jumbotron">
+                <button>Current series</button>
             </div>
             <section>
                 <Comics
@@ -10,6 +11,7 @@
                     :img="comic.thumb"
                     :text="comic.series"
                 />
+                <button>Load More</button>
             </section>
         </div>
         <section id="blu_section">
@@ -137,9 +139,22 @@
             background-color: #1C1C1C;
 
             #jumbotron {
+                position: relative;
                 height: 300px;
                 background-image: url(../assets/img/jumbotron.jpg);
                 background-size: cover;
+
+                button {
+                    position: absolute;
+                    top: calc(100% - 20px);
+                    left: 150px;
+                    color: white;
+                    background-color: $dc_color;
+                    border: 1px solid $dc_color;
+                    padding: 10px;
+                    text-transform: $text_style;
+                    font-weight: bold;
+                }
             }
 
             & > section {
@@ -150,6 +165,16 @@
                 width: 80%;
                 margin: 0 auto;
                 padding: 20px 0;
+
+                button {
+                    color: white;
+                    background-color: $dc_color;
+                    border: 1px solid $dc_color;
+                    padding: 5px 30px;
+                    text-transform: $text_style;
+                    font-size: $text_size;
+                    font-weight: bold;
+                }
             } 
         }
 
