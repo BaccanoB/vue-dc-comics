@@ -71,7 +71,7 @@ export default {
     header {
         display: flex;
         align-items: center;
-        width: 100vw;
+        width: 100%;
         height: 80px;
     }
 

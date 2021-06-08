@@ -90,7 +90,7 @@ export default {
     @import "../style/variable";
 
     footer{
-        width: 100vw;
+        width: 100%;
         height: calc(100vh - 280px);
 
         #dc_logo_section {
