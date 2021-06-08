@@ -66,11 +66,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+    @import "../style/mixins";
     @import "../style/variable";
     
     header {
-        display: flex;
-        align-items: center;
+        @include flex;
         width: 100%;
         height: 80px;
     }
@@ -78,9 +78,8 @@ export default {
     #container{
         width: 80%;
         margin: 0 auto;
-        display: flex;
+        @include flex;
         justify-content: space-between;
-        align-items: center;
 
           img {
         width: 65px;
@@ -102,7 +101,7 @@ export default {
                         text-decoration: none;
                         text-transform: $text_style;
                         font-size: $text_size;
-                        font-weight: bold;
+                        font-weight: $text_weight;
                         color: black;
                         &.active,
                         &:hover {

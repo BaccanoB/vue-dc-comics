@@ -132,6 +132,7 @@
 
 <style lang="scss" scoped>
     @import "../style/variable";
+    @import "../style/mixins";
 
     main {
         color: white;
@@ -153,13 +154,12 @@
                     border: 1px solid $dc_color;
                     padding: 10px;
                     text-transform: $text_style;
-                    font-weight: bold;
+                    font-weight: $text_weight;
                 }
             }
 
             & > section {
-                display: flex;
-                align-items: center;
+                @include flex;
                 justify-content: space-around;
                 flex-wrap: wrap;
                 width: 80%;
@@ -173,7 +173,7 @@
                     padding: 5px 30px;
                     text-transform: $text_style;
                     font-size: $text_size;
-                    font-weight: bold;
+                    font-weight: $text_weight;
                 }
             } 
         }
@@ -187,13 +187,11 @@
                 width: 75%;
                 margin: 0 auto;
                 height: 100%;
-                display: flex;
-                align-items: center;
+                @include flex;
                 justify-content: space-between;
 
                 div{
-                    display: flex;
-                    align-items: center;
+                    @include flex;
 
                     img {
                     height: 50px;

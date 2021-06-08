@@ -88,18 +88,19 @@ export default {
 
 <style lang="scss" scoped>
     @import "../style/variable";
+    @import "../style/mixins";
 
     footer{
         width: 100%;
         height: calc(100vh - 280px);
 
         #dc_logo_section {
-        display: flex;
-        width: 100%;
-        height: calc(100% - 80px);
-        background: url(../assets/img/footer-bg.jpg);
-        background-size: cover;
-        background-position: top;
+            display: flex;
+            width: 100%;
+            height: calc(100% - 80px);
+            background: url(../assets/img/footer-bg.jpg);
+            background-size: cover;
+            background-position: top;
 
             #dc_logo {
             position: relative;
@@ -121,38 +122,37 @@ export default {
             margin-left: 120px;
             color: white;
 
-            div {
+                div {
                 margin: 0 10px;
-            }
+                }
 
-            h3 {
+                h3 {
                 font-size: 14px;
                 text-transform: $text_style;
-            }
+                }
 
-            ul {
+                ul {
                 padding: 10px 0;
                 list-style: none;
                 font-size: 11px;
-                font-weight: bold;
+                font-weight: $text_weight;
                 color: #777777;
-            }
+                }
             }
         }
 
         #footer_social_icons {
-        display: flex;
-        align-items: center;
+        @include flex;
         width: 100%;
         height: 80px;
         background-color: #303030;
 
-        div {
-            display: flex;
-            width: 80%;
-            margin: 0 auto;
+            div {
+                display: flex;
+                width: 80%;
+                margin: 0 auto;
 
-            #button_container {
+                #button_container {
                 width: 50%;
 
                 button {
@@ -163,46 +163,45 @@ export default {
                 color: white;
                 border: 2px solid $dc_color;
                 }
-            }
-
-            #icons_container{
-                width: 50%;
-                display: flex;
-                justify-content: flex-end;
-                align-items: center;
-
-                a {
-                    margin-right: 10px;
-                    text-decoration: none;
-                    font-size: 16px;
-                    font-weight: bold;
-                    text-transform: $text_style;
-                    color:  $dc_color;
                 }
 
-                ul {
-                    list-style: none;
+                #icons_container{
+                width: 50%;
+                @include flex;
+                justify-content: flex-end;
 
-                    li {
-                        display: inline-block;
-                        margin: 0 10px;
+                    a {
+                        margin-right: 10px;
+                        text-decoration: none;
+                        font-size: 16px;
+                        font-weight: $text_weight;
+                        text-transform: $text_style;
+                        color:  $dc_color;
+                    }
 
-                        i{
-                            width: 35px;
-                            height: 35px;
-                            font-size: 25px;
-                            border-radius: 50%;
-                            line-height: 35px;
-                            vertical-align: middle;
-                            text-align: center;
-                            font-weight: bold;
-                            color: #303030;
-                            background-color: #777777;
+                    ul {
+                        list-style: none;
+
+                        li {
+                            display: inline-block;
+                            margin: 0 10px;
+
+                            i {
+                                width: 35px;
+                                height: 35px;
+                                font-size: 25px;
+                                border-radius: 50%;
+                                line-height: 35px;
+                                vertical-align: middle;
+                                text-align: center;
+                                font-weight: $text_weight;
+                                color: #303030;
+                                background-color: #777777;
+                            }
                         }
                     }
-                }
-            }  
-        }
+                }  
+            }
         }
     }
 

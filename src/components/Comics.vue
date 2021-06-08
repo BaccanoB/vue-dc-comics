@@ -10,6 +10,7 @@
 <script>
 export default {
     name:"Comics",
+    // props: ['img', 'text']
     props:{
         img: String,
         text: String
@@ -35,7 +36,7 @@ export default {
             figcaption {
                 text-transform: $text_style;
                 font-size: $text_size;
-                font-weight: bold;
+                font-weight: $text_weight;
             }
         }
 
